@@ -2,11 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>智障</title>
+    <title>本地存储</title>
+    <style type="text/css" media="screen">
+        .layout{
+            width:400px;
+            border:1px solid #ccc;
+            margin:10px auto;
+            padding:10px;
+        }
+        .layout>input:nth-of-type(-n+2){
+            height:40px;
+            width:100%;
+            margin-bottom:10px;
+            border:0;
+            border:1px solid #ccc;
+            border-radius:6px;
+            font-size:22px;
+        }
+        .layout>input:nth-of-type(4){
+            height:40px;
+            width:100%;
+            text-align:center;
+            font-size:22px;
+            color:#aaa;
+            margin-top:10px;
+        }
+    </style>
 </head>
 <body>
-<div>
-    智障
-</div>
+    <div class="layout">
+        <label for="userName">昵称：</label>
+        <input type="text" name="userName" id="p1" placeholder="请输入用户名" />
+        <label for="userPwd">密码：</label>
+        <input type="password" name="userPwd" id="p2" placeholder="请输入密码"/>
+        <label for="rember">记住密码：</label>
+        <input type="checkbox" id="rember" name="rember" />
+        <input type="submit" id="sub" value="提交">
+    </div>
+    <script>
+        window.onload=function(){
+            var uName=window.localStorage.getItem("uName");
+            if(uName){
+                document.getElementById("p1").value=uName;
+                document.getElementById("p2").focus();
+            }else{
+                document.getElementById("p1").focus();
+            }
+
+            document.getElementById("sub").onclick=function(){
+                var name=document.getElementById("p1").value;
+                if(document.getElementById("rember").checked===true){
+                    window.localStorage.setItem("uName",name);
+                }else{
+                    window.localStorage.removeItem("uName");
+                }
+            }
+        }
+    </script>
 </body>
 </html>
