@@ -1,5 +1,5 @@
 {
-  "name": "easyTools",
+  "name": "easy-js-tools",
   "version": "1.0.0",
   "description": "前端日常工具函数",
   "main": "index.ts",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/piece-Chao/easyTools.git"
+    "url": "git+https://github.com/piece-Chao/easy-js-tools.git"
   },
   "keywords": [
     "utils",
@@ -19,9 +19,9 @@
   "author": "machao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/piece-Chao/easyTools/issues"
+    "url": "https://github.com/piece-Chao/easy-js-tools/issues"
   },
-  "homepage": "https://github.com/piece-Chao/easyTools#readme",
+  "homepage": "https://github.com/piece-Chao/easy-js-tools#readme",
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
