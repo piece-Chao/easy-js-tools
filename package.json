@@ -1,5 +1,5 @@
 {
-  "name": "common_utils",
+  "name": "easyTools",
   "version": "1.0.0",
   "description": "前端日常工具函数",
   "main": "index.ts",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/piece-Chao/common_utils.git"
+    "url": "git+https://github.com/piece-Chao/easyTools.git"
   },
   "keywords": [
     "utils",
@@ -19,9 +19,9 @@
   "author": "machao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/piece-Chao/common_utils/issues"
+    "url": "https://github.com/piece-Chao/easyTools/issues"
   },
-  "homepage": "https://github.com/piece-Chao/common_utils#readme",
+  "homepage": "https://github.com/piece-Chao/easyTools#readme",
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
