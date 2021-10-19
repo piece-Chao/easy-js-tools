@@ -2,7 +2,7 @@
   "name": "easy-js-tools",
   "version": "1.0.2",
   "description": "前端日常工具函数",
-  "main": "index.ts",
+  "main": "./src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .ts,.js src",
