@@ -16,6 +16,11 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
+    scriptType: 'module',
+    module: true,
+    experiments: {
+      outputModule: true,
+    },
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
