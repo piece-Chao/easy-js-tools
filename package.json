@@ -1,8 +1,8 @@
 {
   "name": "easy-js-tools",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "前端日常工具函数",
-  "main": "index.ts",
+  "main": "dist/bundle.js",
   "scripts": {
     "test": "exit 0",
     "lint": "eslint --ext .ts,.js src",
