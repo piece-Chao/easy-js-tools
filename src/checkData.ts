@@ -1,7 +1,7 @@
 import { isString } from "./dataTypes";
 
 const checkUrl = (url: string) => {
-  const regExp = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+  const regExp = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/; // eslint-disable-line
   return regExp.test(url);
 };
 
@@ -100,7 +100,7 @@ const checkIdNumber = (card: string) =>{
       const arrCh = ['1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'];
       let cardTemp = 0, i;
       for (i = 0; i < 17; i++) {
-          cardTemp += Number(card.substr(i, 1)) * arrInt[i];
+        cardTemp += Number(card.substr(i, 1)) * arrInt[i];
       }
       const value = arrCh[cardTemp % 11];
       return value === card.substr(17, 1)

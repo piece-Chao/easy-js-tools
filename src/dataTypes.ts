@@ -1,4 +1,4 @@
-import { firstToUpper } from './helper'
+import { firstToUpper } from './helper';
 
 enum ObjCheckType {
   'soft',
@@ -67,12 +67,12 @@ const getType = (value: any, type: string) => {
  */
 const isObject = (obj: Record<string, any>, num = 0) => {
   switch(ObjCheckType[num]) {
-    case 'soft':
-      return typeof obj === 'object';
-    case 'normal':
-      return typeof obj === 'object' && obj !== null;
-    case 'strict':
-      return getType(obj, 'Object');
+  case 'soft':
+    return typeof obj === 'object';
+  case 'normal':
+    return typeof obj === 'object' && obj !== null;
+  case 'strict':
+    return getType(obj, 'Object');
   }
 };
 
