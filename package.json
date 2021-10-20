@@ -2,7 +2,7 @@
   "name": "easy-js-tools",
   "version": "1.0.3",
   "description": "前端日常工具函数",
-  "main": "./src/index.ts",
+  "main": "index.ts",
   "scripts": {
     "test": "exit 0",
     "lint": "eslint --ext .ts,.js src",
