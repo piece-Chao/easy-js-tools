@@ -1,8 +1,9 @@
 name: easy-js-tools
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
 
 jobs:
   build:
